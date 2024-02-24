@@ -1,0 +1,14 @@
+// create a mixing for section title
+@mixin section-title {
+  color: var(--black-11, #2c2e2d);
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 67.2px */
+  text-transform: capitalize;
+
+  @media only screen and (max-width: $tablet) {
+    font-size: 24px;
+  }
+}

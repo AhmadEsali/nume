@@ -1,0 +1,81 @@
+.testimonials {
+  padding: 80px 120px;
+  background: var(--green-3, #f8fcfa);
+
+  h1 {
+    @include section-title;
+  }
+
+  &__items {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  &__item {
+    display: flex;
+    min-width: 384px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+    border-radius: 24px;
+    background: #fff;
+    flex: 1;
+
+    &--odd {
+      margin-top: 24px;
+    }
+
+    p {
+      color: var(--black-11, #2c2e2d);
+
+      font-family: var(--secondary-font, "Noto Sans");
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 22.4px */
+    }
+
+    .user__info {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: 35px;
+      h3 {
+        color: var(--black-11, #2c2e2d);
+
+        margin: 0;
+        /* 18/B18 */
+        font-family: var(--secondary-font, "Noto Sans");
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%; /* 25.2px */
+      }
+      span {
+        color: var(--black-8, #636464);
+
+        /* 18/R18 */
+        font-family: var(--secondary-font, "Noto Sans");
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 25.2px */
+        display: block;
+        margin-top: 4px;
+      }
+    }
+    .ratings {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+  }
+
+  @media only screen and (max-width: $tablet) {
+    display: none;
+  }
+}

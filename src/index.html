@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <title>Nume</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <header>
+        <div class="header__logo">
+          <img inline src="src/assets/icons/logo.svg" alt="logo" />
+          <img inline src="src/assets/icons/nume.svg" alt="nume" />
+        </div>
+
+        <button class="mobile-button">
+          <img inline src="src/assets/icons/menu.svg" alt="menu-1" />
+
+        </button>
+        <div class="header__nav">
+          <ul>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        <div class="header__cta">
+          <button class="btn btn--secondary">Get Started</button>
+        </div>
+      </header>
+      <div class="mobile-menu">
+
+      </div>
+      <div class="hero">
+        <div class="hero__text">
+          <h1>Transforming Hair Restoration</h1>
+          <h2>Empowering Clinics & Clients</h2>
+          <p>
+            Get personalized support throughout your journey while our
+            platform streamlines clinic operations for efficiency. Our AI
+            ensures precision, guiding your path to optimal results.
+          </p>
+        </div>
+        <div class="hero__cta">
+          <div class="input-group">
+            <input type="email" placeholder="Enter your email" />
+            <button class="btn btn--primary">Notify Me</button>
+          </div>
+          <span>*Enter your email address to notify you when the app is
+            available.</span>
+        </div>
+      </div>
+    </div>
+    <div class="overview">
+      <div class="overview__text">
+        <h1>
+          Empowering AI-guided <br />
+          hair transplant journeys
+        </h1>
+        <p>
+          Tailoring the hair transplant process precisely to the preferences
+          and needs <br />
+          of both <strong>clients</strong> and <strong>clinics </strong> alike
+          by solving the following problems.
+        </p>
+      </div>
+      <button class="btn btn--green">Let's Talk</button>
+      <div class="overview__stats">
+        <div class="stats__item stats__item--60">
+          <span class="stats__number">60%</span>
+          <span class="stats__text">Expectation Gap</span>
+        </div>
+        <div class="stats__item stats__item--40">
+          <span class="stats__number">40%</span>
+          <span class="stats__text">Customer Service <br />
+            Challenges</span>
+        </div>
+        <div class="stats__item stats__item--30">
+          <span class="stats__number">30%</span>
+          <span class="stats__text">Pre - Op Inefficiency</span>
+        </div>
+      </div>
+    </div>
+    <div class="solutions">
+      <h1>Our Streamlined <br> Healthcare Solutions</h1>
+      <div class="solutions__items">
+        <div class="items_row items_row--1">
+          <div class="solutions__item solutions__item--large">
+            <span class="item-label">For Clinics</span>
+            <div class="item-image">
+              <img src="<%= require('./assets/images/solution-1.jpeg') %>" alt="solution1"/>
+            </div>
+            <h3>Pre - Op Enquiries</h3>
+            <p>
+              Our app simplifies pre-op processes ensuring swift patient registration.<br> Patients register seamlessly
+              while healthcare providers benefit from an <br> automated system for detailed reports, optimizing the pre-op
+              journey. </p>
+          </div>
+          <div class="solutions__item solutions__item--small">
+            <span class="item-label">For Clinics</span>
+            <div class="item-image">
+
+              <img inline src="src/assets/icons/solution-2.svg" alt="2" />
+            </div>
+            <h3>Post - Op Instructions</h3>
+            <p>
+              Our AI-driven post-op care provides personalized guidance and automated check-ins, enabling proactive
+              intervention by analyzing patient progress and alerting providers to concerns. </p>
+          </div>
+        </div>
+        <div class=" items_row items_row--2">
+          <div class="solutions__item solutions__item--small">
+            <span class="item-label">For Patients</span>
+            <div class="item-image">
+
+              <img inline src="src/assets/icons/solution-3.svg" alt="3" />
+            </div>
+            <h3>AI - Guide</h3>
+            <p>
+              Get tailored AI chat assistance focused on this topic, addressing all your concerns and queries
+              effortlessly. </p>
+          </div>
+          <div class="solutions__item solutions__item--large">
+            <span class="item-label">For Patients</span>
+            <div class="item-image">
+
+              <img src="<%= require('./assets/images/solution-4.png') %>" />
+
+            </div>
+            <h3>AI Generated Roadmap</h3>
+            <p>
+              Say goodbye to uncertainty—our AI roadmap guarantees 95% <br> accuracy in predicting your post-surgery
+              appearance, organized month by month.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="features">
+      <h1>Our Features</h1>
+      <p>Discover the power of our app, unveiling a world of possibilities through our standout AI features.</p>
+      <div class="features__items">
+        <div class="features__item features__item--green">
+            <h3>Information-Rich Home Page</h3>
+            <img src="<%= require('./assets/images/feature-1.jpg') %>" alt="feature-1">
+
+          </div>
+          <div class="features__item features__item--yellow">
+            <h3>Smooth Medical Report Process</h3>
+            <img src="<%= require('./assets/images/feature-2.jpg') %>" alt="feature-2">
+          </div>
+          <div class="features__item features__item--green">
+            <h3>Easy-to-Use Medical Profile</h3>
+            <img src="<%= require('./assets/images/feature-3.jpg') %>" alt="feature-3">
+          </div>
+
+          </div>
+    </div>
+
+    <div class="testimonials">
+      <h1>Testimonials</h1>
+      <div class="testimonials__items">
+        <div class="testimonials__item">
+          <p>
+            For our clinic, NuMe app revolutionized patient care. Effortless, efficient, and indispensable.
+          </p>
+          <div class="user__info">
+            <img src="<%= require('./assets/images/avatar-1.png') %>" alt="avatar-1">
+            <div>
+              <h3>Dr. Sarah Adams,</h3>
+            <span>Dermatologist</span>
+            </div>
+
+          </div>
+          <div class="ratings">
+            <img inline src="src/assets/icons/star.svg" alt="star" />
+            <img inline src="src/assets/icons/star.svg" alt="star" />
+            <img inline src="src/assets/icons/star.svg" alt="star" />
+            <img inline src="src/assets/icons/star.svg" alt="star" />
+
+
+          </div>
+        </div>
+        <div class="testimonials__item testimonials__item--odd" >
+          <p>
+            Clinics thrive with NuMe app. Boosted productivity and delighted patients every time.
+          </p>
+          <div class="user__info">
+            <img src="<%= require('./assets/images/avatar-2.png') %>" alt="avatar-2">
+            <div>
+              <h3>Dr. Emily Chen,</h3>
+            <span>Surgeon</span>
+            </div>
+
+          </div>
+          <div class="ratings">
+            <img inline src="src/assets/icons/star.svg" alt="star" />
+            <img inline src="src/assets/icons/star.svg" alt="star" />
+            <img inline src="src/assets/icons/star.svg" alt="star" />
+            <img inline src="src/assets/icons/star.svg" alt="star" />
+
+
+          </div>
+        </div>
+
+        <div class="testimonials__item">
+          <p>
+            Our clinic swears by NuMe app! Seamless communication and happier, more informed patients.
+          </p>
+          <div class="user__info">
+            <img src="<%= require('./assets/images/avatar-3.png') %>" alt="avatar-3">
+            <div>
+              <h3>Dr. Laura Garcia,</h3>
+            <span>Trichologist</span>
+            </div>
+
+          </div>
+          <div class="ratings">
+            <img inline src="src/assets/icons/star.svg" alt="star" />
+            <img inline src="src/assets/icons/star.svg" alt="star" />
+            <img inline src="src/assets/icons/star.svg" alt="star" />
+            <img inline src="src/assets/icons/empty-star.svg" alt="star" />
+
+
+          </div>
+        </div>
+
+        <div class="testimonials__item">
+          <p>
+            As a patient, NuMe app made my hair transplant journey seamless and informed. Highly recommended!
+          </p>
+          <div class="user__info">
+            <img src="<%= require('./assets/images/avatar-4.png') %>" alt="avatar-4">
+            <div>
+              <h3>James Rodriguez,</h3>
+            <span>HT Patient</span>
+            </div>
+
+          </div>
+          <div class="ratings">
+            <img inline src="src/assets/icons/star.svg" alt="star" />
+            <img inline src="src/assets/icons/star.svg" alt="star" />
+            <img inline src="src/assets/icons/star.svg" alt="star" />
+            <img inline src="src/assets/icons/empty-star.svg" alt="star" />
+
+
+          </div>
+        </div>
+
+        <div class="testimonials__item testimonials__item--odd">
+          <p>
+            Patient-centered care elevated! NuMe app ensured a smooth recovery and excellent support.
+          </p>
+          <div class="user__info">
+            <img src="<%= require('./assets/images/avatar-5.png') %>" alt="avatar-5">
+            <div>
+              <h3>Anna Thompson,</h3>
+            <span>Patient</span>
+            </div>
+
+          </div>
+          <div class="ratings">
+            <img inline src="src/assets/icons/star.svg" alt="star" />
+            <img inline src="src/assets/icons/star.svg" alt="star" />
+            <img inline src="src/assets/icons/star.svg" alt="star" />
+            <img inline src="src/assets/icons/empty-star.svg" alt="star" />
+
+
+          </div>
+        </div>
+
+        <div class="testimonials__item">
+          <p>
+            As a patient, NuMe app was a game-changer. Guidance at my fingertips, ensuring a successful procedure.
+          </p>
+          <div class="user__info">
+            <img src="<%= require('./assets/images/avatar-6.png') %>" alt="avatar-6">
+            <div>
+              <h3>John Smith, </h3>
+              <span>HT Patient</span>
+            </div>
+
+          </div>
+          <div class="ratings">
+            <img inline src="src/assets/icons/star.svg" alt="star" />
+            <img inline src="src/assets/icons/star.svg" alt="star" />
+            <img inline src="src/assets/icons/star.svg" alt="star" />
+            <img inline src="src/assets/icons/empty-star.svg" alt="star" />
+
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="team">
+      <h1>NuMe Team</h1>
+      <div class="team__items">
+        <div class="team__item team__item--left">
+          <q>
+            Working with AI will empower us to feel great and
+strengthen our confidence
+          </q>
+          <div class="team__member">
+            <h3>Marsalis Beckford,</h3>
+            <span>Co-Founder and CEO of NuMe</span>
+          </div>
+          <img src="<%= require('./assets/images/team-1.png') %>" alt="team-1">
+          <div class="team__logo">
+            <img inline src="src/assets/icons/logo-small.svg" alt="logo" />
+            <img inline src="src/assets/icons/nume-small.svg" alt="nume" />
+          </div>
+        </div>
+        <div class="team__item team__item--right">
+          <div class="image-container">
+
+          <img src="<%= require('./assets/images/team-2.png') %>" alt="team-2">
+          <div class="team__logo">
+            <img inline src="src/assets/icons/logo-small.svg" alt="logo" />
+            <img inline src="src/assets/icons/nume-small.svg" alt="nume" />
+          </div>
+          </div>
+          <q>
+            AI will revolutionize the customer experience and
+help customers achieve exceptional results
+          </q>
+          <div class="team__member">
+            <h3>Marie-Pier Duchesne,</h3>
+            <span>Co-Founder and CSO of NuMe</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="faq">
+      <h1>FAQs</h1>
+      <div class="faq__items">
+        <div class="faq__item">
+          <button>What is a hair transplant?
+          </button>
+          <p>
+            A hair transplant is a surgical procedure that involves moving hair follicles from one part of the body (usually the back or sides of the scalp) to the balding or thinning areas.
+          </p>
+        </div>
+        <div class="faq__item">
+          <button>What techniques are used in hair transplants?</button>
+          <p>
+            NuMe uses AI to ensure precision, guiding the path to optimal
+            results. It tailors the hair transplant process precisely to the
+            preferences and needs of both clients and clinics.
+          </p>
+        </div>
+        <div class="faq__item">
+          <button>How can I get started with NuMe?</button>
+          <p>
+            You can get started with NuMe by signing up for our newsletter to
+            be notified when the app is available.
+          </p>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="contact">
+      <h1>
+        Get in touch with us <br>today to discover more <br> about NuMe!
+      </h1>
+      <p>
+        Eager to learn more about our services? Don't hesitate to contact us! Whether you're a client seeking personalized guidance or a clinic aiming to streamline operations, our team is ready to assist.
+      </p>
+      <button class="btn btn--primary">Contact Us</button>
+
+    </div>
+
+    <footer class="footer">
+      <div class="footer__left">
+        <div class="logo-container">
+          <img inline src="src/assets/icons/logo.svg" alt="logo" />
+          <img inline src="src/assets/icons/nume.svg" alt="nume" />
+        </div>
+        <div class="company-info">
+          <a href="mailto:Hello@numetoday.com">Hello@numetoday.com</a>
+          <span>|</span>
+          <a href="tel:020-88 73 61">020-88 73 61</a>
+          <span>|</span>
+          <p>Quebec, CA</p>
+        </div>
+      </div>
+      <div class="footer__right">
+        <div class="social-links">
+          <a href="#"><img inline src="src/assets/icons/facebook.svg" alt="facebook" /></a>
+          <a href="#"><img inline src="src/assets/icons/twitter.svg" alt="twitter" /></a>
+          <a href="#"><img inline src="src/assets/icons/insta.svg" alt="instagram" /></a>
+          <a href="#"><img inline src="src/assets/icons/linkedin.svg" alt="linkedin" /></a>
+        </div>
+        <div class="copyright">
+          <p>© 2024 NuMe</p>
+          <span>|</span>
+          <a href="#">Terms of Use</a>
+          <span>|</span>
+          <a href="#">Cookies</a>
+          <span>|</span>
+          <a href="#">Privacy Policy</a>
+
+        </div>
+        </div>
+    </footer>
+    <script src="../dist/bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+.faq {
+  h1 {
+    @include section-title;
+  }
+
+  border-radius: 24px;
+  margin: 80px 120px;
+  padding: 40px 64px;
+
+  background: var(--green-3, #f8fcfa);
+}

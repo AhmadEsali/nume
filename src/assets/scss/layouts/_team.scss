@@ -1,0 +1,113 @@
+.team {
+  padding: 80px 120px;
+  h1 {
+    @include section-title;
+  }
+
+  .team__items {
+    margin-top: 64px;
+    display: flex;
+    gap: 136px;
+    align-items: center;
+  }
+
+  .team__item {
+    q {
+      color: var(--black-11, #2c2e2d);
+      font-size: 22px;
+      font-style: italic;
+      font-weight: 500;
+      line-height: 140%; /* 30.8px */
+    }
+
+    .team__member {
+      h3 {
+        color: var(--black-11, #2c2e2d);
+        margin: 0;
+        /* 20/B20 */
+        font-family: var(--secondary-font, "Noto Sans");
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%; /* 28px */
+      }
+
+      span {
+        color: var(--black-8, #636464);
+        display: block;
+        margin-top: 8px;
+        /* 20/R20 */
+        font-family: var(--secondary-font, "Noto Sans");
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 28px */
+      }
+    }
+
+    .team__logo {
+      border-radius: 12px;
+      max-width: 114px;
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      background: var(--black-11, #2c2e2d);
+    }
+    &--left {
+      padding: 24px;
+      border-radius: 24px;
+      background: var(--green-5, #e3f3ee);
+      position: relative;
+      flex: 2;
+      q {
+        display: block;
+        width: 50%;
+      }
+      .team__logo {
+        margin-top: 200px;
+      }
+      .team__member {
+        margin-top: 32px;
+      }
+      img {
+        display: block;
+        max-width: 319px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+
+    &--right {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      flex: 1;
+      .image-container {
+        padding: 24px;
+        border-radius: 24px;
+        background: var(--green-5, #e3f3ee);
+        position: relative;
+        height: 270px;
+
+        // first image child
+        & > img {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          max-width: 238px;
+          display: block;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: $tablet) {
+    padding: 48px 16px;
+
+    .team__items {
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+}

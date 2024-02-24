@@ -1,0 +1,127 @@
+.solutions {
+  background: var(--Black-black-11, #2c2e2d);
+  padding: 80px 120px;
+
+  h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 67.2px */
+    text-transform: capitalize;
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 64px;
+
+    .items_row {
+      display: flex;
+      align-items: center;
+
+      &--1 {
+        width: 100%;
+        justify-content: space-between;
+      }
+      &--2 {
+        width: calc(100% - 32px);
+        gap: 104px;
+        justify-content: center;
+      }
+    }
+
+    .solutions__item {
+      position: relative;
+      border-radius: 24px;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      .item-image {
+        align-self: self-end;
+      }
+
+      .item-label {
+        position: absolute;
+        top: 32px;
+        left: 32px;
+        color: var(--black-8, #2c2e2d);
+
+        font-family: var(--secondary-font, "Noto Sans");
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 19.6px */
+      }
+      h3 {
+        margin-top: 8px;
+        color: var(--black-11, #2c2e2d);
+
+        font-family: var(--secondary-font, "Noto Sans");
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%; /* 33.6px */
+      }
+      p {
+        color: var(--black-11, #2c2e2d);
+
+        font-family: var(--secondary-font, "Noto Sans");
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 22.4px */
+      }
+      &--small {
+        background: var(--green-4, #f4faf8);
+        flex-grow: 1;
+        max-width: 436px;
+      }
+      &--large {
+        background: var(--green-5, #e3f3ee);
+        flex-grow: 2;
+        max-width: 740px;
+        img {
+          max-width: 420px;
+          max-height: 300px;
+
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding: 64px 16px;
+
+    h1 {
+      font-size: 24px;
+    }
+    &__items {
+      margin-top: 48px;
+      .items_row {
+        flex-direction: column;
+        gap: 24px;
+        &--1 {
+          width: 100%;
+        }
+        &--2 {
+          width: 100%;
+        }
+      }
+      .solutions__item {
+        width: 100%;
+        h3 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

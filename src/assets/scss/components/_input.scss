@@ -1,0 +1,25 @@
+input {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 120px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 13px 32px;
+  border: none;
+  backdrop-filter: blur(25px);
+  color: #fff;
+  font-family: var(--secondary-font, "Noto Sans");
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+  &:focus {
+    border: 2px solid #fff;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+  &::placeholder {
+    color: var(--black-6, #c3c4c3);
+  }
+}
