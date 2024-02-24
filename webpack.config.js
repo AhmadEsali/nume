@@ -6,7 +6,7 @@ const HtmlWebpackInlineSVGPlugin = require('html-webpack-inline-svg-plugin');
 module.exports = {
   entry: "./src/index.js",
   mode: "development",
-
+  watch:false,
   output: {
     filename: "js/[name][contenthash].js",
     clean: true,
@@ -67,5 +67,5 @@ module.exports = {
    // Clean the "dist" directory before each build to remove old files.
   ],
 
-  watch: true,
+
 };
