@@ -59,5 +59,12 @@
     p {
       font-size: 14px;
     }
+
+    &__items {
+      overflow-x: scroll;
+    }
+    &__item {
+      min-width: 300px;
+    }
   }
 }
